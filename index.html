@@ -1,65 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dipendra Shahu | Structural Engineering Lab</title>
-<style>
-  :root { --bg:#0b1220; --card:#131c2e; --text:#e6ebf5; --muted:#8fa0bd; --accent:#38bdf8; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-  header { position:sticky; top:0; background:rgba(11,18,32,.95); border-bottom:1px solid #22304a; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
-  header strong { color:var(--accent); }
-  nav a { color:var(--muted); text-decoration:none; margin-left:14px; font-size:15px; }
-  nav a:hover { color:var(--accent); }
-  section { max-width:900px; margin:0 auto; padding:56px 20px; }
-  h1 { font-size:clamp(28px,6vw,44px); line-height:1.2; margin-bottom:14px; }
-  h2 { font-size:24px; margin-bottom:14px; color:var(--accent); }
-  p { color:var(--muted); max-width:640px; }
-  .hero .tag { color:var(--accent); font-size:14px; letter-spacing:2px; text-transform:uppercase; margin-bottom:10px; }
-  .grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); margin-top:18px; }
-  .card { background:var(--card); border:1px solid #22304a; border-radius:12px; padding:18px; }
-  .card h3 { font-size:17px; margin-bottom:6px; }
-  footer { text-align:center; color:var(--muted); font-size:13px; padding:30px 20px; border-top:1px solid #22304a; }
-</style>
-</head>
-<body>
-
-<header>
-  <strong>Structural Engineering Lab</strong>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#lab">Lab</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
-
-<section id="home" class="hero">
-  <div class="tag">Civil and Structural Engineering</div>
-  <h1>Dipendra Shahu</h1>
-  <p>An engineering portfolio and an interactive laboratory where engineering ideas become visual, hands-on experiences.</p>
-</section>
-
-<section id="lab">
-  <h2>The Lab</h2>
-  <p>Interactive tools and experiments will live here.</p>
-  <div class="grid">
-    <div class="card"><h3>Coming soon</h3><p>First experiment in progress.</p></div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <p>Engineering projects, models and technical notes will be added here.</p>
-</section>
-
-<section id="about">
-  <h2>About</h2>
-  <p>Civil engineering graduate from Nepal, interested in structural design, engineering software and automation.</p>
-</section>
-
-<footer>&copy; Dipendra Shahu. Educational tools only, not a substitute for professional engineering review.</footer>
-
-</body>
-  </html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dipendra Shahu | Structural Engineering Lab</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="wrap"><a class="brand" href="index.html"><img src="assets/monogram.svg" alt="">Dipendra Shahu</a><nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="portfolio/index.html">Portfolio</a><a href="lab/index.html">Engineering Lab</a></nav></div></header>
+<main class="wrap">
+<div class="hero"><div><h1>Structural engineering you can touch.</h1><p>I'm Dipendra Shahu, a civil engineering graduate in Nepal. This site holds my engineering work and a lab of interactive experiences that make structural ideas visible.</p></div>
+<div class="preview"><svg id="beam" viewBox="0 0 600 220" role="img" aria-label="Simply supported beam bending under a load"></svg>
+<label for="load">Load <input id="load" type="range" min="0" max="100" value="55"></label>
+<small>Preview only: the shape shows the idea of bending, not a calculated result.</small></div></div>
+<div class="routes"><a href="portfolio/index.html"><h2>Portfolio</h2><p>Projects, case studies and the engineering work behind them.</p></a><a href="lab/index.html"><h2>Engineering Lab</h2><p>Interactive experiences where you change inputs and watch the structure respond.</p></a></div>
+<section class="block"><h2>Selected work</h2><div class="empty"><h3>First project goes here</h3><p>Projects will appear once Dipendra approves them for publishing.</p></div></section>
+</main>
+<footer><div class="wrap">Educational tools on this site do not replace full structural analysis, code checks or professional engineering review.</div></footer><script src="js/main.js"></script></body></html>
